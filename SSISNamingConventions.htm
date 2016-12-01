@@ -1,0 +1,710 @@
+<HTML>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-empty{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:none;border-width:0px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-5mgg{text-align:left;font-weight:bold;background-color:#c0c0c0;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<p>
+In 2006 <a href="http://sqlblog.com/blogs/jamie_thomson/" target="_blank">Jamie Thomson</a> came up with <a href="http://sqlblog.com/blogs/jamie_thomson/archive/2012/01/29/suggested-best-practises-and-naming-conventions.aspx" target="_blank">naming conventions</a> for SSIS tasks and data flow components.</BR>
+These naming conventions make your packages and logs more readable. Five versions and a decade</BR>
+later a couple of tasks and components where deprecated, but there where are also over 40 new tasks</BR>
+and components introduced by Microsoft. This page show a new complete list with prefix suggestions</BR>
+for all new tasks and components (marked with *).
+</p>
+<table class="tg">
+  <tr>
+    <th class="tg-5mgg">Task name</th>
+    <th class="tg-5mgg">Prefix</th>
+    <th class="tg-5mgg">Type</th>
+    <th class="tg-5mgg">New</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">For Loop Container</td>
+    <td class="tg-yw4l">FLC</td>
+    <td class="tg-yw4l">Container</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Foreach Loop Container</td>
+    <td class="tg-yw4l">FELC</td>
+    <td class="tg-yw4l">Container</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Sequence Container</td>
+    <td class="tg-yw4l">SEQC</td>
+    <td class="tg-yw4l">Container</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ActiveX Script</td>
+    <td class="tg-yw4l">AXS</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Analysis Services Execute DDL Task</td>
+    <td class="tg-yw4l">ASE</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Analysis Services Processing Task</td>
+    <td class="tg-yw4l">ASP</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Azure Blob Download Task</td>
+    <td class="tg-yw4l">ADT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Azure Blob Upload Task</td>
+    <td class="tg-yw4l">AUT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Azure HDInsight Create Cluster Task</td>
+    <td class="tg-yw4l">ACCT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Azure HDInsight Delete Cluster Task</td>
+    <td class="tg-yw4l">ACDT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Azure HDInsight Hive Task</td>
+    <td class="tg-yw4l">AHT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Azure HDInsight Pig Task</td>
+    <td class="tg-yw4l">APT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Back Up Database Task</td>
+    <td class="tg-yw4l">BACKUP</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Bulk Insert Task</td>
+    <td class="tg-yw4l">BLK</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">CDC Control Task</td>
+    <td class="tg-yw4l">CDC</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Check Database Integrity Task</td>
+    <td class="tg-yw4l">CHECKDB</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Data Flow Task</td>
+    <td class="tg-yw4l">DFT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Data Mining Query Task</td>
+    <td class="tg-yw4l">DMQ</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Data Profiling Task</td>
+    <td class="tg-yw4l">DPT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Execute Package Task</td>
+    <td class="tg-yw4l">EPT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Execute Process Task</td>
+    <td class="tg-yw4l">EPR</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Execute SQL Server Agent Job Task</td>
+    <td class="tg-yw4l">AGENT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Execute SQL Task</td>
+    <td class="tg-yw4l">SQL</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Execute T-SQL Statement Task</td>
+    <td class="tg-yw4l">TSQL</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Expression Task</td>
+    <td class="tg-yw4l">EXPR</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">File System Task</td>
+    <td class="tg-yw4l">FSYS</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">FTP Task</td>
+    <td class="tg-yw4l">FTP</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Hadoop File System Task</td>
+    <td class="tg-yw4l">HFSYS</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Hadoop Hive Task</td>
+    <td class="tg-yw4l">HIVE</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Hadoop Pig Task</td>
+    <td class="tg-yw4l">PIG</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">History Cleanup Task</td>
+    <td class="tg-yw4l">HISTCT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Maintenance Cleanup Task</td>
+    <td class="tg-yw4l">MAINCT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Message Queue Task</td>
+    <td class="tg-yw4l">MSMQ</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Notify Operator Task</td>
+    <td class="tg-yw4l">NOT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Rebuild Index Task</td>
+    <td class="tg-yw4l">REBIT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Reorganize Index Task</td>
+    <td class="tg-yw4l">REOIT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Script Task</td>
+    <td class="tg-yw4l">SCR</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Send Mail Task</td>
+    <td class="tg-yw4l">SMT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Shrink Database Task</td>
+    <td class="tg-yw4l">SHRINKDB</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Transfer Database Task</td>
+    <td class="tg-yw4l">TDB</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Transfer Error Messages Task</td>
+    <td class="tg-yw4l">TEM</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Transfer Jobs Task</td>
+    <td class="tg-yw4l">TJT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Transfer Logins Task</td>
+    <td class="tg-yw4l">TLT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Transfer Master Stored Procedures Task</td>
+    <td class="tg-yw4l">TSP</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Transfer SQL Server Objects Task</td>
+    <td class="tg-yw4l">TSO</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Update Statistics Task</td>
+    <td class="tg-yw4l">STAT</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Web Service Task</td>
+    <td class="tg-yw4l">WST</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">WMI Data Reader Task</td>
+    <td class="tg-yw4l">WMID</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">WMI Event Watcher Task</td>
+    <td class="tg-yw4l">WMIE</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">XML Task</td>
+    <td class="tg-yw4l">XML</td>
+    <td class="tg-yw4l">Task</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-empty"></td>
+    <td class="tg-empty"></td>
+    <td class="tg-empty"></td>
+    <td class="tg-empty"></td>
+  </tr>
+  <tr>
+    <td class="tg-5mgg">Transformation name</td>
+    <td class="tg-5mgg">Prefix</td>
+    <td class="tg-5mgg">Type</td>
+    <td class="tg-5mgg">New</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ADO NET Source</td>
+    <td class="tg-yw4l">ADO_SRC</td>
+    <td class="tg-yw4l">Source</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Azure Blob Source</td>
+    <td class="tg-yw4l">AB_SRC</td>
+    <td class="tg-yw4l">Source</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">CDC Source</td>
+    <td class="tg-yw4l">CDC_SRC</td>
+    <td class="tg-yw4l">Source</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">DataReader Source</td>
+    <td class="tg-yw4l">DR_SRC</td>
+    <td class="tg-yw4l">Source</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Excel Source</td>
+    <td class="tg-yw4l">EX_SRC</td>
+    <td class="tg-yw4l">Source</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Flat File Source</td>
+    <td class="tg-yw4l">FF_SRC</td>
+    <td class="tg-yw4l">Source</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">HDFS File Source</td>
+    <td class="tg-yw4l">HDFS_SRC</td>
+    <td class="tg-yw4l">Source</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">OData Source</td>
+    <td class="tg-yw4l">ODATA_SRC</td>
+    <td class="tg-yw4l">Source</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ODBC Source</td>
+    <td class="tg-yw4l">ODBC_SRC</td>
+    <td class="tg-yw4l">Source</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">OLE DB Source</td>
+    <td class="tg-yw4l">OLE_SRC</td>
+    <td class="tg-yw4l">Source</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Raw File Source</td>
+    <td class="tg-yw4l">RF_SRC</td>
+    <td class="tg-yw4l">Source</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">SharePoint List Source</td>
+    <td class="tg-yw4l">SPL_SRC</td>
+    <td class="tg-yw4l">Source</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">XML Source</td>
+    <td class="tg-yw4l">XML_SRC</td>
+    <td class="tg-yw4l">Source</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Aggregate</td>
+    <td class="tg-yw4l">AGG</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Audit</td>
+    <td class="tg-yw4l">AUD</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Balanced Data Distributor</td>
+    <td class="tg-yw4l">BDD</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Cache Transform</td>
+    <td class="tg-yw4l">CCH</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">CDC Splitter</td>
+    <td class="tg-yw4l">CDCS</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Character Map</td>
+    <td class="tg-yw4l">CHM</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Conditional Split</td>
+    <td class="tg-yw4l">CSPL</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Copy Column</td>
+    <td class="tg-yw4l">CPYC</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Data Conversion</td>
+    <td class="tg-yw4l">DCNV</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Data Mining Query</td>
+    <td class="tg-yw4l">DMQ</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Derived Column</td>
+    <td class="tg-yw4l">DER</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">DQS Cleansing</td>
+    <td class="tg-yw4l">DQSC</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Export Column</td>
+    <td class="tg-yw4l">EXPC</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Fuzzy Grouping</td>
+    <td class="tg-yw4l">FZG</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Fuzzy Lookup</td>
+    <td class="tg-yw4l">FZL</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Import Column</td>
+    <td class="tg-yw4l">IMPC</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Lookup</td>
+    <td class="tg-yw4l">LKP</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Merge</td>
+    <td class="tg-yw4l">MRG</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Merge Join</td>
+    <td class="tg-yw4l">MRGJ</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Multicast</td>
+    <td class="tg-yw4l">MLT</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">OLE DB Command</td>
+    <td class="tg-yw4l">CMD</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Percentage Sampling</td>
+    <td class="tg-yw4l">PSMP</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Pivot</td>
+    <td class="tg-yw4l">PVT</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Row Count</td>
+    <td class="tg-yw4l">CNT</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Row Sampling</td>
+    <td class="tg-yw4l">RSMP</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Script Component</td>
+    <td class="tg-yw4l">SCR</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Slowly Changing Dimension</td>
+    <td class="tg-yw4l">SCD</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Sort</td>
+    <td class="tg-yw4l">SRT</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Term Extraction</td>
+    <td class="tg-yw4l">TEX</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Term Lookup</td>
+    <td class="tg-yw4l">TEL</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Union All</td>
+    <td class="tg-yw4l">ALL</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Unpivot</td>
+    <td class="tg-yw4l">UPVT</td>
+    <td class="tg-yw4l">Transformation</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ADO NET Destination</td>
+    <td class="tg-yw4l">ADO_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Azure Blob Destination</td>
+    <td class="tg-yw4l">AB_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Data Mining Model Training</td>
+    <td class="tg-yw4l">DMMT_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Data Streaming Destination</td>
+    <td class="tg-yw4l">DS_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">DataReaderDest</td>
+    <td class="tg-yw4l">DR_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Dimension Processing</td>
+    <td class="tg-yw4l">DP_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Excel Destination</td>
+    <td class="tg-yw4l">EX_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Flat File Destination</td>
+    <td class="tg-yw4l">FF_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">HDFS File Destination</td>
+    <td class="tg-yw4l">HDFS_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ODBC Destination</td>
+    <td class="tg-yw4l">ODBC_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">OLE DB Destination</td>
+    <td class="tg-yw4l">OLE_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Partition Processing</td>
+    <td class="tg-yw4l">PP_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Raw File Destination</td>
+    <td class="tg-yw4l">RF_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Recordset Destination</td>
+    <td class="tg-yw4l">RS_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">SharePoint List Destination</td>
+    <td class="tg-yw4l">SPL_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">SQL Server Compact Destination</td>
+    <td class="tg-yw4l">SSC_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh">*</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">SQL Server Destination</td>
+    <td class="tg-yw4l">SS_DST</td>
+    <td class="tg-yw4l">Destination</td>
+    <td class="tg-baqh"></td>
+  </tr>
+</table>
+</HTML>
